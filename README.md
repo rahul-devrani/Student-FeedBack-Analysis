@@ -30,13 +30,14 @@ Students can log in and submit feedback, while admins can view a stylish dashboa
 
 Student-Feedback-System/
 │
-├── app.py
+├── app.py                    # Flask backend logic
 ├── static/
-│ └── style.css
+│   └── style.css             # Theme and layout styles
 ├── templates/
-│ ├── login.html
-│ ├── feedback.html
-│ └── dashboard.html
+│   ├── login.html            # Login page (student/admin)
+│   ├── feedback.html         # Feedback form for students
+│   └── dashboard.html        # Admin dashboard with charts
+
 
 
 
@@ -50,7 +51,8 @@ Student-Feedback-System/
    CREATE DATABASE feedback_system;
    USE feedback_system;
 
-
+2. **Create Tables (users and feedback)**
+```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(100),
@@ -65,12 +67,14 @@ CREATE TABLE feedback (
     facilities INT,
     suggestion TEXT
 );
+```
 
-
+2. **Insert Values in users table**
+```sql
 INSERT INTO users (username, password, role) VALUES ('admin1', 'admin1', 'admin');
 INSERT INTO users (username, password, role) VALUES ('student1', 'pass1', 'student');
 
-
+```
 
 🧪 How to Run Locally
 
@@ -87,3 +91,4 @@ python app.py
 4️⃣ Open in Browser
 http://localhost:5000
 
+---
