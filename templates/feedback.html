@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Submit Your Feedback</h2>
+        <div class="card">
+            <form method="POST">
+                <label>Teaching (1-5):</label>
+                <input type="number" name="teaching" min="1" max="5" required>
+
+                <label>Content (1-5):</label>
+                <input type="number" name="content" min="1" max="5" required>
+
+                <label>Facilities (1-5):</label>
+                <input type="number" name="facilities" min="1" max="5" required>
+
+                <label>Suggestions:</label>
+                <textarea name="suggestion" rows="4"></textarea>
+
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+    </div>
+    <footer>Made By Purvi and Team</footer>
+</body>
+</html>
