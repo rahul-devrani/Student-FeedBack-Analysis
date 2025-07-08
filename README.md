@@ -28,15 +28,7 @@ Students can log in and submit feedback, while admins can view a stylish dashboa
 
 ## 📁 Folder Structure
 
-Student-Feedback-System/
-│
-├── app.py                    # Flask backend logic
-├── static/
-│   └── style.css             # Theme and layout styles
-├── templates/
-│   ├── login.html            # Login page (student/admin)
-│   ├── feedback.html         # Feedback form for students
-│   └── dashboard.html        # Admin dashboard with charts
+<pre> Student-Feedback-System/ │ ├── app.py # Flask backend logic ├── static/ │ └── style.css # Theme and layout styles (dark mode) ├── templates/ │ ├── login.html # Login page (student/admin) │ ├── feedback.html # Feedback form for students │ └── dashboard.html # Admin dashboard with charts └── README.md # Project documentation </pre>
 
 
 
