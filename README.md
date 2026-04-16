@@ -71,7 +71,7 @@ INSERT INTO users (username, password, role) VALUES ('student1', 'pass1', 'stude
 🧪 How to Run Locally
 
 1️⃣ Clone the Repo
-git clone https://github.com/yourusername/student-feedback-system.git
+git clone https://github.com/rahul-devrani/Student-Feedback-Analysis.git
 cd student-feedback-system
 
 2️⃣ Install Requirements
